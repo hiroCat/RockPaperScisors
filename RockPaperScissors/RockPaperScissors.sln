@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.API", "RockPaperScissors.API\RockPaperScissors.API.csproj", "{4A53D5DB-4434-430D-AC37-BACDF8979BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.API.Tests", "RockPaperScissors.API.Tests\RockPaperScissors.API.Tests.csproj", "{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.Contract.ServiceLibrary", "RockPaperScissors.Contract.ServiceLibrary\RockPaperScissors.Contract.ServiceLibrary.csproj", "{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.Impl.ServiceLibrary", "RockPaperScissors.Impl.ServiceLibrary\RockPaperScissors.Impl.ServiceLibrary.csproj", "{F5B0668D-9B47-45FD-8411-188DA5DC398B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{44D02E9C-C40B-4580-9B25-FC98EC4B5651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-DistributedServices", "2-DistributedServices", "{7AC667E6-984D-4E11-85BD-BBA1C566EDBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-application", "3-application", "{6F682EA8-25DC-47AF-AEBD-CBA0E6AA3952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A53D5DB-4434-430D-AC37-BACDF8979BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A53D5DB-4434-430D-AC37-BACDF8979BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A53D5DB-4434-430D-AC37-BACDF8979BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A53D5DB-4434-430D-AC37-BACDF8979BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B0668D-9B47-45FD-8411-188DA5DC398B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B0668D-9B47-45FD-8411-188DA5DC398B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B0668D-9B47-45FD-8411-188DA5DC398B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B0668D-9B47-45FD-8411-188DA5DC398B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A53D5DB-4434-430D-AC37-BACDF8979BF5} = {7AC667E6-984D-4E11-85BD-BBA1C566EDBB}
+		{38410D65-76AF-48EC-AD5C-A0DDE9EAB9E1} = {7AC667E6-984D-4E11-85BD-BBA1C566EDBB}
+		{C3F15C44-90E5-413B-8CE6-99AD714FE6B8} = {6F682EA8-25DC-47AF-AEBD-CBA0E6AA3952}
+		{F5B0668D-9B47-45FD-8411-188DA5DC398B} = {6F682EA8-25DC-47AF-AEBD-CBA0E6AA3952}
+	EndGlobalSection
+EndGlobal

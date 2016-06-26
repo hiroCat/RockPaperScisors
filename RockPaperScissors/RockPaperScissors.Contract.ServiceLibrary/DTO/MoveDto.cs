@@ -4,7 +4,7 @@ namespace RockPaperScissors.Contract.ServiceLibrary.DTO
 {
     public class MoveDto : BaseDto
     {
-        public bool playerWins { get; set; }
+        public int playerWins { get; set; }
         public DateTime dateMove { get; set; }
         public int computerMove { get; set; }
         public int humanMove { get; set; }

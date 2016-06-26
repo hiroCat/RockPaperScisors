@@ -104,8 +104,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseModel.cs" />
-    <Compile Include="Models\GameModes\ClassicGameMove.cs" />
-    <Compile Include="Models\GameModes\SpockGameMove.cs" />
+    <Compile Include="Models\GameModes.cs" />
     <Compile Include="Models\Move.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

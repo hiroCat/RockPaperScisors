@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\GameAppHelpers.cs" />
     <Compile Include="Repositories\IRockPaperScissorsRepository.cs" />
     <Compile Include="Services\GameAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

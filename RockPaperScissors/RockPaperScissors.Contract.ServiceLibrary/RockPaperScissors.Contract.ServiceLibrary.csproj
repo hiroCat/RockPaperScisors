@@ -68,6 +68,7 @@
     <Compile Include="DTO\MoveDto.cs" />
     <Compile Include="DTO\UserDto.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\GameModes.cs" />
     <Compile Include="Entities\MoveEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="IGameAppService.cs" />

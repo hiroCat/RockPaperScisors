@@ -1,0 +1,9 @@
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\bin\Debug\RockPaperScissors.Database.dacpac
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\Model.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\refactor.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\postdeploy.sql
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\predeploy.sql
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\RockPaperScissors.Database.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\obj\Debug\RockPaperScissors.Database.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\bin\Debug\RockPaperScissors.Database.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.Database\bin\Debug\RockPaperScissors.Database.pdb

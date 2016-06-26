@@ -2,7 +2,7 @@
 
 namespace RockPaperScissors.API.Models
 {
-    public class User
+    public class User : BaseModel
     {
         public List<Move> playsOfUser { get; set; }
     }

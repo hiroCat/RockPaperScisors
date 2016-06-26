@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Move]
+       [dbo].[User]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[FK_User_ToTable] (Foreign Key)
+     Table rebuild
+       [dbo].[Move] (Table)
+       [dbo].[User] (Table)
+     Create
+       [dbo].[FK_User_Id] (Foreign Key)
+
+** Supporting actions
+
+The project and target databases have different collation settings. Deployment errors might occur.
+

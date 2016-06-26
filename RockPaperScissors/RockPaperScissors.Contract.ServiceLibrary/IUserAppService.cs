@@ -9,6 +9,7 @@ namespace RockPaperScissors.Contract.ServiceLibrary
 {
     public interface IUserAppService
     {
+        UserDto getUser();
         UserDto getUser(long id);
         bool UpdateUser(UserDto user);
     }

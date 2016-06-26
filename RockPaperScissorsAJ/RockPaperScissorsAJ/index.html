@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="gameApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="Content/ui-bootstrap-csp.css"/>
+    <script type="text/javascript" src="Scripts/angular.min.js"></script>
+</head>
+
+<body ng-controller="GameController as game">
+    <header>
+        <h1 class="text-center">Let's play a Game</h1>
+    </header>
+
+    <!--  Products Container  -->
+    <div class="list-group">
+        <!--  Product Container  -->
+        <div class="list-group-item" ng-repeat="moves  in user.moves">
+            <h3>{{moves}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+            <!-- Image Gallery  -->
+            <product-gallery></product-gallery>
+
+            <!-- Product Tabs  -->
+            <product-tabs></product-tabs>
+        </div>
+
+    </div>
+</body>
+</html>

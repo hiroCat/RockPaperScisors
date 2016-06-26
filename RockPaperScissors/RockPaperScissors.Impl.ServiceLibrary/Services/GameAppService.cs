@@ -3,6 +3,7 @@ using RockPaperScissors.Contract.ServiceLibrary;
 using RockPaperScissors.Contract.ServiceLibrary.DTO;
 using RockPaperScissors.Contract.ServiceLibrary.Entities;
 using RockPaperScissors.Impl.ServiceLibrary.Helpers;
+using RockPaperScissors.Impl.ServiceLibrary.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,28 +13,32 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Services
     public class GameAppService : IGameAppService
     {
         public Random _random;
+        public IRockPaperScissorsRepository _repository;
 
         #region .: Public methods :.
 
-        public GameAppService(Random random)
+        public GameAppService(Random random, IRockPaperScissorsRepository repository)
         {
             _random = random;
+            _repository = repository;
         }
 
         public MoveDto getMove(long id)
         {
-            throw new NotImplementedException();
+            return fromMoveEntityToMoveDTO(_repository.getMove(id));
         }
 
         public MoveDto makeMove(MoveDto moveDto)
         {
             var moveEntity = getMoveFromIA(fromMoveDTOToMoveEntity(moveDto));
+            _repository.saveMove(moveEntity);
             return fromMoveEntityToMoveDTO(moveEntity);
         }
 
         public MoveDto makeMove(IEnumerable<MoveDto> moves)
         {
             var moveEntity = getMoveFromIA(fromMoveDTOToMoveEntity(moves).ToList());
+            _repository.saveMove(moveEntity);
             return fromMoveEntityToMoveDTO(moveEntity);
         }
 
@@ -43,7 +48,7 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Services
 
         private MoveEntity getMoveFromIA(MoveEntity move)
         {
-            var iaMove = GameAppHelpers.getIaMove(move);
+            var iaMove = getIaMove(move);
             move.computerMove = iaMove;
             move.playerWins = GameAppHelpers.getPlayerWins(iaMove, move.humanMove, move.gameType);
             return move;
@@ -51,7 +56,7 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Services
 
         private MoveEntity getMoveFromIA(IList<MoveEntity> moves)
         {
-            var iaMove = GameAppHelpers.getIaMove(moves);
+            var iaMove = getIaMove(moves);
             var lastMove = moves[moves.Count-1];
 
             lastMove.computerMove = iaMove;
@@ -63,7 +68,7 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Services
         {
             if (move.difficultyType <= 1) //User always wins (0,1)
             {
-
+                return GameAppHelpers.getMove(move.humanMove, move.gameType, 0);
             }
 
             if (move.difficultyType <= 5) //We use the random factor (2,5)
@@ -71,30 +76,21 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Services
                 int gameMod = (int)GameModes.ClassicGameMove;
                 if (move.gameType == 1)
                     gameMod = (int)GameModes.SpockGameMove;
-                return _random.Next(0, gameMod);
+                return _random.Next(0, gameMod-1);
             }
 
             if (move.difficultyType > 9) //User ALWAYS looses (10)
             {
-                int gameMod = (int)GameModes.ClassicGameMove;
-                if (move.gameType == 1)
-                    gameMod = (int)GameModes.SpockGameMove;
-                return _random.Next(0, gameMod);
+                return GameAppHelpers.getMove(move.humanMove, move.gameType, 1);
             }
 
-            if (move.difficultyType > 9) //User ALWAYS looses (10)
-            {
-                int gameMod = (int)GameModes.ClassicGameMove;
-                if (move.gameType == 1)
-                    gameMod = (int)GameModes.SpockGameMove;
-                return _random.Next(0, gameMod);
-            }
-
+            return GameAppHelpers.getMove(move.humanMove, move.gameType,_random.Next(0,2));
         }
 
-        private  int getIaMove(IEnumerable<MoveEntity> moves)
+        private  int getIaMove(IList<MoveEntity> moves)
         {
-            throw new NotImplementedException();
+            // future change to a mean prediction 
+            return getIaMove(moves[moves.Count - 1]);
         }
 
         #region Mappers

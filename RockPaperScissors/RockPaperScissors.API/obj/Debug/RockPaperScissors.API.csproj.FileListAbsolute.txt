@@ -36,3 +36,43 @@ c:\users\hiro\documents\visual studio 2015\Projects\RockPaperScissors\RockPaperS
 c:\users\hiro\documents\visual studio 2015\Projects\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.csprojResolveAssemblyReference.cache
 c:\users\hiro\documents\visual studio 2015\Projects\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.dll
 c:\users\hiro\documents\visual studio 2015\Projects\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\csc.exe
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\vbc.exe
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\VBCSCompiler.exe
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.API.dll.config
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.API.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.API.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Autofac.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Autofac.Integration.WebApi.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\AutoMapper.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Newtonsoft.Json.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.ADO.DB.Infrastructure.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.Contract.ServiceLibrary.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.Impl.ServiceLibrary.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Net.Http.Formatting.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Web.Http.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Web.Http.WebHost.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.ADO.DB.Infrastructure.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.Contract.ServiceLibrary.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\RockPaperScissors.Impl.ServiceLibrary.pdb
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Autofac.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Autofac.Integration.WebApi.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\AutoMapper.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\Newtonsoft.Json.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Net.Http.Formatting.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Web.Http.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\bin\System.Web.Http.WebHost.xml
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.csprojResolveAssemblyReference.cache
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.dll
+C:\Users\hiro\Source\Repos\RockPaperScisors\RockPaperScissors\RockPaperScissors.API\obj\Debug\RockPaperScissors.API.pdb

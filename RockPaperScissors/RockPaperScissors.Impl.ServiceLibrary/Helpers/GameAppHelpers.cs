@@ -44,13 +44,23 @@ namespace RockPaperScissors.Impl.ServiceLibrary.Helpers
         /// <returns></returns>
         public static int getMove(int humanMove, int gameType, int gameResult)
         {
+            var result = humanMove;
+
             if (gameResult == 2)
-                return humanMove;
-            int gameMod = (int)GameModes.ClassicGameMove;
+                return result;
+
+            int gameMod = 3;
             if (gameType == 1)
-                gameMod = (int)GameModes.SpockGameMove;
+                gameMod = 5;
 
+            if (gameResult == 0)
+            {
+                result = humanMove - 1;
+                return result < 0 ? gameMod - 1 : result;
+            }
 
+            result = humanMove + 1;
+            return result == gameMod ? 0 : result;
 
         }
     }

@@ -122,6 +122,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RockPaperScissors.ADO.DB.Infrastructure\RockPaperScissors.ADO.DB.Infrastructure.csproj">
+      <Project>{192DD241-6469-479B-B91A-BAE97A3C6740}</Project>
+      <Name>RockPaperScissors.ADO.DB.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RockPaperScissors.Contract.ServiceLibrary\RockPaperScissors.Contract.ServiceLibrary.csproj">
       <Project>{C3F15C44-90E5-413B-8CE6-99AD714FE6B8}</Project>
       <Name>RockPaperScissors.Contract.ServiceLibrary</Name>

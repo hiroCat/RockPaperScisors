@@ -35,7 +35,6 @@ namespace RockPaperScissors.ADO.DB.Infrastructure
                         {
                             id = id,
                             createdUser = Convert.ToDateTime(reader["createdUser"]),
-                            playsOfUser = 
                         };
                     }
                 }
@@ -43,57 +42,15 @@ namespace RockPaperScissors.ADO.DB.Infrastructure
             return returnDto;
         }
 
-        public TrainingDTO GetDTOByAirportCode(string AirportCode)
+
+        public MoveEntity getMove(long id)
         {
-            TrainingDTO returnDto = null;
-            using (var sqlconnection = new SqlConnection(_infrastructureConfiguration.ConnectionString))
-            {
-                sqlconnection.Open();
-                var sqlcommand = new SqlCommand()
-                {
-                    Connection = sqlconnection,
-                    CommandText = "SELECT IP,City,AirportCode " +
-                                  "FROM Localitzation " +
-                                  "WHERE AirportCode=@AirportCode",
-                    CommandTimeout = _infrastructureConfiguration.DatabaseTimeout,
-                    CommandType = CommandType.Text
-                };
-                sqlcommand.Parameters.AddWithValue("@AirportCode", AirportCode);
-                using (var reader = sqlcommand.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        returnDto = new TrainingDTO()
-                        {
-                            Ip = Convert.ToString(reader["IP"]),
-                            City = Convert.ToString(reader["City"]),
-                            AirportCode = AirportCode,
-                        };
-                    }
-                }
-            }
-            return returnDto;
+            throw new NotImplementedException();
         }
 
-        public void SaveAirportCity(TrainingDTO dto)
+        public void saveMove(MoveEntity moveEntity)
         {
-            using (var sqlconnection = new SqlConnection(_infrastructureConfiguration.ConnectionString))
-            {
-                sqlconnection.Open();
-                var sqlcommand = new SqlCommand()
-                {
-                    Connection = sqlconnection,
-                    CommandText = "INSERT INTO Localitzation (IP,City,AirportCode)" +
-                                  "VALUES (@IP,@City,@AirportCode)",
-                    CommandTimeout = _infrastructureConfiguration.DatabaseTimeout,
-                    CommandType = CommandType.Text
-                };
-                sqlcommand.Parameters.AddWithValue("@IP", dto.Ip);
-                sqlcommand.Parameters.AddWithValue("@City", dto.City);
-                sqlcommand.Parameters.AddWithValue("@AirportCode", dto.AirportCode);
-
-                sqlcommand.ExecuteReader();
-            }
+            throw new NotImplementedException();
         }
     }
 }
